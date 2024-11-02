@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="image-container">
+            <img src="images (1).png" alt="Snake Game" class="game-image">
+        </div>
+        <button class="start-button" onclick="goToSecondPage(); playButtonClickSound()">Press Here to Start</button>
+        <div class="theme-sound-container">
+            <button class="theme-button" onclick="toggleTheme(); playButtonClickSound()">Theme</button>
+            <button class="sound-button" onclick="toggleSound(); playButtonClickSound()">Sound</button>
+            <button class="music-button" onclick="toggleMusic(); playButtonClickSound()">Music</button>
+        </div>
+    </div>
+    <audio id="musicElement" src="theme.mp3" loop></audio>
+    <audio id="buttonClickSound" src="buttonclick.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

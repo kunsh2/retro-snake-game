@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Difficulty Selection</title>
+</head>
+<body>
+    <div class="difficulty-container">
+        <h1 class="select-difficulty-heading">Select Difficulty</h1>
+
+        <div class="difficulty-buttons">
+            <button class="difficulty-button" onclick="setDifficulty('easy'); playButtonClickSound()">Easy</button>
+            <button class="difficulty-button" onclick="setDifficulty('normal'); playButtonClickSound()">Normal</button>
+            <button class="difficulty-button" onclick="setDifficulty('hard'); playButtonClickSound()">Hard</button>
+        </div>
+        <div class="theme-sound-container">
+            <button class="theme-button" onclick="toggleTheme(); playButtonClickSound()">Theme</button>
+            <button class="sound-button" onclick="toggleSound(); playButtonClickSound()">Sound</button>
+            <button class="music-button" onclick="toggleMusic(); playButtonClickSound()">Music</button>
+        </div>
+    </div>
+    <audio id="musicElement" src="theme.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>

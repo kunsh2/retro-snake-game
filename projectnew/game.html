@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <div class="info-container">
+            <div>Score: <span id="score">0</span></div>
+            <div>High Score: <span id="highScore">0</span></div>
+            <div>Timer: <span id="timer">0</span> seconds</div>
+        </div>
+        <div class="theme-sound-container">
+            <button class="theme-button" onclick="toggleTheme(); playButtonClickSound()">Theme</button>
+            <button class="sound-button" onclick="toggleSound(); playButtonClickSound()">Sound</button>
+            <button class="music-button" onclick="toggleMusic(); playButtonClickSound()">Music</button>
+            <button class="start-button" onclick="playButtonClickSound(); startGame()">Start</button>
+        </div>
+    </div>
+    <audio id="musicElement" src="theme.mp3" loop></audio>
+    <audio id="buttonClickSound" src="buttonclick.mp3"></audio>
+    <audio id="eatSound" src="eat.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

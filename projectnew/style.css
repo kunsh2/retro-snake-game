@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(38,39,47,255);
+}
+
+.game-container {
+    text-align: center;
+}
+
+.image-container {
+    border: 5px solid #39FF14;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.game-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.start-button,
+.difficulty-button,
+.theme-button,
+.sound-button,
+.music-button {
+    background-color: #39FF14;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover,
+.difficulty-button:hover,
+.theme-button:hover,
+.sound-button:hover,
+.music-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.info-container {
+    margin: 10px 0;
+}
+
+.theme-sound-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.theme-blue .start-button,
+.theme-blue .difficulty-button,
+.theme-blue .theme-button,
+.theme-blue .sound-button,
+.theme-blue .music-button {
+    background-color: blue;
+}
+
+.theme-green .start-button,
+.theme-green .difficulty-button,
+.theme-green .theme-button,
+.theme-green .sound-button,
+.theme-green .music-button {
+    background-color: #39FF14;
+}
+
+.theme-purple .start-button,
+.theme-purple .difficulty-button,
+.theme-purple .theme-button,
+.theme-purple .sound-button,
+.theme-purple .music-button {
+    background-color: purple;
+}
+
+.difficulty-button {
+    background-color: #FF6F00;
+    color: white;
+    border: 2px solid #FFD600;
+    padding: 12px 24px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.difficulty-button:hover {
+    background-color: #FFD600;
+    color: black;
+}
+
+.select-difficulty-heading {
+    font-size: 36px;
+    color: #FFD600;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#gameCanvas {
+    border: 2px solid #FFD600; 
+}
+
+
+.info-container {
+    margin: 10px 0;
+    font-size: 20px; 
+    color: #39FF14; 
+}
+
+#score,
+#highScore,
+#timer {
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: 2px solid transparent; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+
+.theme-green button {
+    background-color: #39FF14; 
+    border-color: #FFEA00; 
+}
+
+.theme-blue button {
+    background-color: blue; 
+    border-color: lightblue; 
+}
+
+.theme-purple button {
+    background-color: purple; 
+    border-color: lavender; 
+}
+
+button:hover {
+    opacity: 0.8
+}
+
+
+.return-button {
+    margin-top: 20px; 
+}
